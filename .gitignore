@@ -17,5 +17,5 @@ gen/
 proguard/
 *.ipr
 *.iws
-.idea
+.idea/
 app/build/
