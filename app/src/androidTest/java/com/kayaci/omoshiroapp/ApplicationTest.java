@@ -1,4 +1,4 @@
-package com.kayaci.omoshiroapp;
+package com.kayac.omoshiroapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

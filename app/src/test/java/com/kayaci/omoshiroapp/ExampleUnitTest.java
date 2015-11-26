@@ -1,4 +1,4 @@
-package com.kayaci.omoshiroapp;
+package com.kayac.omoshiroapp;
 
 import org.junit.Test;
 
