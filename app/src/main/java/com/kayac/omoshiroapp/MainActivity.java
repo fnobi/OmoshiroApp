@@ -1,4 +1,4 @@
-package com.kayaci.omoshiroapp;
+package com.kayac.omoshiroapp;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
