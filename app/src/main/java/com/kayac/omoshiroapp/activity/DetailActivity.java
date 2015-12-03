@@ -28,5 +28,12 @@ public class DetailActivity extends AppCompatActivity {
         setTitle("これは本" + bookId + "だ");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailActivity.this, EditActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
