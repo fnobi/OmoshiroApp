@@ -16,4 +16,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK 1"
+        android:id="@+id/button_book1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK 2"
+        android:id="@+id/button_book2"
+        android:layout_below="@+id/button_book1"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
