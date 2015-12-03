@@ -13,10 +13,6 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.SugoiActivity"
-            android:label="@string/title_activity_sugoi"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".activity.DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar">
