@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        
+        Button buttonBookmark = (Button) findViewById(R.id.button_bookmark);
+        buttonBookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BookmarkActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
