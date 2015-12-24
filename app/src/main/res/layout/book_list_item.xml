@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/item_thumbnail"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="#ddd"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/item_first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_thumbnail"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/item_thumbnail"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="ああああああああああああああああああああああああ"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_tag_book_background"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="日記"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_thumbnail"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/item_thumbnail"
+        android:singleLine="true"
+        android:text="ああああああああああああああああああああああああ"
+        android:textColor="#aaa"
+        android:textSize="12dp" />
+
+</RelativeLayout>

@@ -23,6 +23,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
+                android:id="@+id/photo_image_view"
                 android:src="@drawable/photo_sample"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"

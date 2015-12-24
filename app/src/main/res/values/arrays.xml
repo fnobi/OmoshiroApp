@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>日記</item>
+        <item>映画</item>
+        <item>本</item>
+    </string-array>
+</resources>
