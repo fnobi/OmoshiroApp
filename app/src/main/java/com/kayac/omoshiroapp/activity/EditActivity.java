@@ -75,7 +75,7 @@ public class EditActivity extends AppCompatActivity {
         mKey = intent.getStringExtra(EXTRA_KEY);
         String value = mPref.getString(mKey, "");
 
-        if (TextUtils.isEmpty(value)) {
+        if (TextUtils.isEmpty(value)) {  // （value が "" か null のとき true）
             // SharedPreferencesには指定されたキーのデータはないため、新しい日記を追加する
             // 画像ファイルは一時的な名前にしておく
             mDisplayingImageFile = mTmpImageFile;

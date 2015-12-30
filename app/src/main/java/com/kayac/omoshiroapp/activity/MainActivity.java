@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EditActivity.class);
+                // 現在時刻のキーを作成してEditActivityに渡す
                 String key = DateFormat.format(
                         "yyyy_MM_dd_HH_mm_ss",
                         Calendar.getInstance()
@@ -136,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
                 // サムネイル用なので1/16サイズで読み込む
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 16;
+                // スムーズなスクロールを行うためには、decodeの処理を別スレッドで行うほうがよいが、
+                // 簡単のためにここでdecodeする
                 Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
                 thumbnailView.setImageBitmap(bitmap);
             } else {
